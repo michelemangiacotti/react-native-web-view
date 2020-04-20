@@ -6,7 +6,7 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <WebView source={{ uri: 'https://italyculturalfitness.it' }} style={{ marginTop: 20 }} />
+        <WebView source={{ uri: 'https://italyculturalfitness.it' }} style={{ marginTop: -120 }} />
       </View>
     )
   }

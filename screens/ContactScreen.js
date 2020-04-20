@@ -6,7 +6,7 @@ export default class LinksScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <WebView source={{ uri: 'https://italyculturalfitness.it/contatti-2/' }} style={{ marginTop: 20 }} />
+        <WebView source={{ uri: 'https://italyculturalfitness.it/contatti-2/' }} style={{ marginTop: -120 }}/>
       </View>
     )
 
@@ -16,6 +16,6 @@ export default class LinksScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fafafa',
+    backgroundColor: '#fff',
   },
 });

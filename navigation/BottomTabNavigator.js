@@ -4,6 +4,7 @@ import * as React from 'react';
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import TourScreen from '../screens/TourScreen';
+import ContactScreen from '../screens/ContactScreen';
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Home';
@@ -21,7 +22,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={HomeScreen}
         options={{
           title: 'Home',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-code-working" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-home" />,
         }}
       />
       <BottomTab.Screen
@@ -29,17 +30,17 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={TourScreen}
         options={{
           title: 'Tour',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-walk" />,
         }}
       />
       <BottomTab.Screen
         name="Contact"
-        component={TourScreen}
+        component={ContactScreen}
         options={{
           title: 'Contact',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-contacts" />,
         }}
-      />
+      /> 
     </BottomTab.Navigator>
   );
 }
