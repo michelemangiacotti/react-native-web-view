@@ -1,3 +1,3 @@
 # react-native-web-view
 
-An example of web view app of a generic site
+A web view app of a generic site made with react native expo sdk 37
